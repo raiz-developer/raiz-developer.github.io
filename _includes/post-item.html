@@ -3,17 +3,18 @@
         <div class="col-lg-5">
             {% assign tags = post.tags | sort_natural %}
             {% for tag in tags %}
-                <a href="#" class="badge bg-dark mb-2"><i class="fas fa-circle me-2 small fw-bold"></i>{{ tag }}</a>
+            <a href="#" class="badge bg-dark mb-2"><i class="fas fa-circle me-2 small fw-bold"></i>{{ tag }}</a>
             {% endfor %}
             <h2 class="card-title">
                 <a href="{{ post.url | absolute_url }}" class="btn-link text-reset stretched-link">{{ post.title | strip_html }}</a>
             </h2>
             <div class="d-flex align-items-center position-relative mt-3">
+                {% assign author = site.authors | find: "id", post.author %}
                 <div class="avatar me-2">
-
+                    <img class="avatar-img rounded-circle" src="{{ author.avatar }}" alt="{{ author.name }}">
                 </div>
                 <div>
-                    <h5 class="mb-1"><a href="#" class="stretched-link text-reset btn-link">Lori Ferguson</a></h5>
+                    <h5 class="mb-1"><a href="{{ '/authors/', author.id | relative_url | append: author.id }}" class="stretched-link text-reset btn-link">{{ author.name }}</a></h5>
                     <ul class="nav align-items-center small">
                         <li class="nav-item me-3">{% include date-pt-BR.html date = post.date %}</li>
                         <li class="nav-item"><i class="far fa-clock me-1"></i>{% include reading-time.html content=post.content %}</li>

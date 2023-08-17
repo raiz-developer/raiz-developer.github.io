@@ -17,6 +17,29 @@ lang: pt-BR
 sass:
   style: compressed
 
+# authors
+authors:
+  - id: danielwisky
+    name: "Daniel Wisky"
+    email: "daniel-ddw@hotmail.com"
+    bio: "Desenvolvedor de Software"
+    avatar: "/assets/img/authors/danielwisky.jpg"
+    social:
+      - name: "GitHub"
+        url: "https://github.com/danielwisky"
+        icon: "fab fa-github"
+      - name: "LinkedIn"
+        url: "https://www.linkedin.com/in/danielwisky"
+        icon: "fab fa-linkedin"
+  - id: tiagojose
+    name: "Tiago José"
+    email: ""
+    bio: "Desenvolvedor de Software"
+    avatar: "/assets/img/authors/tiagojose.jpg"
+    social:
+      - name: "GitHub"
+        url: ""
+
 # plugins
 plugins:
   - jekyll-paginate
