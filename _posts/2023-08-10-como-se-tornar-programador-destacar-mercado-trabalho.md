@@ -2,6 +2,8 @@
 layout: post
 title: "Como se Tornar um Programador Excepcional e se Destacar no Mercado de Trabalho"
 author: danielwisky
+image:
+  thumb: /assets/img/posts/2023-08-10-como-se-tornar-programador-destacar-mercado-trabalho/thumb.jpeg
 tags: [Carreira]
 ---
 

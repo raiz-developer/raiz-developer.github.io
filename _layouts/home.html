@@ -2,15 +2,4 @@
 layout: default
 ---
 
-<section class="pt-0">
-    <div class="container">
-        {% assign posts = paginator.posts | default: site.posts %}
-        <div class="row">
-            <div class="col-12">
-                {% for post in posts %}
-                {% include post-item.html %}
-                {% endfor %}
-            </div>
-        </div>
-    </div>
-</section>
+{% include banner.html %}

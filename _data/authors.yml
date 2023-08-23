@@ -1,0 +1,24 @@
+danielwisky:
+  name: "Daniel Wisky"
+  email: "daniel-ddw@hotmail.com"
+  bio: "Desenvolvedor de Software"
+  avatar: "/assets/img/authors/danielwisky.jpg"
+  social:
+    - name: "GitHub"
+      url: "https://github.com/danielwisky"
+      icon: "fab fa-github"
+    - name: "LinkedIn"
+      url: "https://www.linkedin.com/in/danielwisky"
+      icon: "fab fa-linkedin"
+tiagosilva:
+  name: "Tiago Silva"
+  email: ""
+  bio: "Specialist Software Developer"
+  avatar: "/assets/img/authors/tiagosilva.jpg"
+  social:
+    - name: "GitHub"
+      url: "https://github.com/progtiago"
+      icon: "fab fa-github"
+    - name: "LinkedIn"
+      url: "https://www.linkedin.com/in/tiago-silva-644b0533/"
+      icon: "fab fa-linkedin"

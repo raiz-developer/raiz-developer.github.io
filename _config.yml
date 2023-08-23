@@ -1,7 +1,7 @@
-title: DevRaiz Blog
+title: Raiz Academy
 email: raizdeveloper@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  O DevRaiz é um blog dedicado aos entusiastas de tecnologia, programação e desenvolvimento de software. Nosso objetivo é fornecer informações atualizadas e relevantes sobre os mais diversos tópicos relacionados ao mundo da tecnologia.
+  A Raiz Academy é um blog dedicado aos entusiastas de tecnologia, programação e desenvolvimento de software. Nosso objetivo é fornecer informações atualizadas e relevantes sobre os mais diversos tópicos relacionados ao mundo da tecnologia.
   
   Nossos artigos cobrem uma ampla variedade de temas, desde as últimas tendências em linguagens de programação e frameworks até dicas e truques para aprimorar suas habilidades de desenvolvimento. Apresentamos tutoriais passo a passo, discussões aprofundadas sobre arquitetura de software, boas práticas de codificação e insights valiosos para ajudar você a se manter atualizado no campo em constante evolução da tecnologia.
   
@@ -16,29 +16,6 @@ lang: pt-BR
 
 sass:
   style: compressed
-
-# authors
-authors:
-  - id: danielwisky
-    name: "Daniel Wisky"
-    email: "daniel-ddw@hotmail.com"
-    bio: "Desenvolvedor de Software"
-    avatar: "/assets/img/authors/danielwisky.jpg"
-    social:
-      - name: "GitHub"
-        url: "https://github.com/danielwisky"
-        icon: "fab fa-github"
-      - name: "LinkedIn"
-        url: "https://www.linkedin.com/in/danielwisky"
-        icon: "fab fa-linkedin"
-  - id: tiagojose
-    name: "Tiago José"
-    email: ""
-    bio: "Desenvolvedor de Software"
-    avatar: "/assets/img/authors/tiagojose.jpg"
-    social:
-      - name: "GitHub"
-        url: ""
 
 # plugins
 plugins:
