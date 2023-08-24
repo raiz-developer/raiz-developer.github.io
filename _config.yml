@@ -5,11 +5,11 @@ description: >- # this means to ignore newlines until "baseurl:"
   
   Nossos artigos cobrem uma ampla variedade de temas, desde as últimas tendências em linguagens de programação e frameworks até dicas e truques para aprimorar suas habilidades de desenvolvimento. Apresentamos tutoriais passo a passo, discussões aprofundadas sobre arquitetura de software, boas práticas de codificação e insights valiosos para ajudar você a se manter atualizado no campo em constante evolução da tecnologia.
   
-  Além disso, o DevRaiz está comprometido em fornecer conteúdos acessíveis tanto para iniciantes quanto para profissionais experientes. Queremos inspirar você a explorar novas áreas, aprender novas tecnologias e aprimorar suas habilidades técnicas.
+  Além disso, o Raiz Academy está comprometido em fornecer conteúdos acessíveis tanto para iniciantes quanto para profissionais experientes. Queremos inspirar você a explorar novas áreas, aprender novas tecnologias e aprimorar suas habilidades técnicas.
   
   Através do nosso blog, esperamos criar uma comunidade de programadores entusiasmados que possam compartilhar conhecimentos, trocar experiências e colaborar para o crescimento mútuo. Estamos aqui para tornar a sua jornada de desenvolvimento de software mais enriquecedora, divertida e repleta de descobertas.
   
-  Junte-se a nós no DevRaiz e embarque em uma jornada emocionante pelo mundo da tecnologia e do desenvolvimento de software!
+  Junte-se a nós no Raiz Academy e embarque em uma jornada emocionante pelo mundo da tecnologia e do desenvolvimento de software!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 lang: pt-BR

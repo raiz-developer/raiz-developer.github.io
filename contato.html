@@ -3,28 +3,25 @@ layout: page
 title: "Contato"
 ---
 
-<p>Caso queira entrar em contato, por favor, preencha o formulário abaixo e envie sua mensagem.</p>
-<div class="my-5">
-    <form id="contactForm" action="https://formspree.io/f/{{ site.email }}" class="needs-validation" method="POST" novalidate>
-        <input type="text" name="_gotcha" style="display:none" />
-        <input type="hidden" name="_subject" value="Contato - Blog" />
-        <input type="hidden" name="_next" value="{{ site.baseurl }}/obrigado/" />
-        <div class="form-floating">
-            <input class="form-control" id="nome" type="text" name="nome" placeholder="Digite seu nome..." required />
-            <label>Nome:</label>
-            <div class="invalid-feedback">Nome é obrigatório.</div>
-        </div>
-        <div class="form-floating">
-            <input class="form-control" id="email" type="email" name="_replyto" placeholder="Digite seu e-mail..." required />
-            <label for="email">E-mail:</label>
-            <div class="invalid-feedback">Por favor insira um endereço de e-mail válido.</div>
-        </div>
-        <div class="form-floating">
-            <textarea class="form-control" id="message" name="mensagem" placeholder="Digite sua mensagem aqui..." style="height: 12rem" required></textarea>
-            <label for="message">Mensagem:</label>
-            <div class="invalid-feedback">Mensagem é obrigatório.</div>
-        </div>
-        <br/>
-        <button class="btn text-uppercase" type="submit">Enviar</button>
-    </form>
+<div class="content mb-5">
+    <h2 id="we-would-love-to-hear-from-you">Gostaríamos muito de ouvir de você...</h2>
+    <p>Caso queira entrar em contato, por favor, preencha o formulário abaixo e envie sua mensagem.</p>
 </div>
+<form method="POST" action="https://formspree.io/f/{{ site.email }}" class="needs-validation" novalidate>
+    <input type="text" name="_gotcha" style="display:none"/>
+    <input type="hidden" name="_subject" value="Contato - Blog"/>
+    <input type="hidden" name="_next" value="{{ site.baseurl }}/obrigado/"/>
+    <div class="form-group">
+        <label for="name">Seu nome (obrigatório):</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Digite seu nome..." required>
+    </div>
+    <div class="form-group">
+        <label for="email">Seu endereço de e-mail (obrigatório):</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Digite seu e-mail..." required>
+    </div>
+    <div class="form-group">
+        <label for="message">Sua mensagem aqui:</label>
+        <textarea name="message" id="message" class="form-control" placeholder="Digite sua mensagem aqui..." required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+</form>

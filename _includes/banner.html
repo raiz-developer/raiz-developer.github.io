@@ -1,8 +1,8 @@
-<div class="banner text-center">
+<div class="{% if include.type == 'tags' %}banner{% else %}header{% endif %} text-center">
     <div class="container">
         <div class="row">
             <div class="col-lg-9 mx-auto">
-                {% if include.type == "home" %}
+                {% if include.type == "tags" %}
                 <h1 class="mb-5">O que você <br> Gosta de ler hoje?</h1>
 
                 {%- capture site_tags -%}
@@ -19,6 +19,15 @@
                     </li>
                     {%- endfor -%}
                 </ul>
+                {% endif %}
+                {% if include.type == "nav" %}
+                <div class="col-lg-9 mx-auto">
+                    <h1 class="mb-4">{{ page.title }}</h1>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a class="text-default" href="{{ '' | absolute_url }}">Home&nbsp; &nbsp; /</a></li>
+                        <li class="list-inline-item text-primary">{{ page.title }}</li>
+                    </ul>
+                </div>
                 {% endif %}
             </div>
         </div>

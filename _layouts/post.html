@@ -17,7 +17,7 @@ layout: default
                     <ul class="card-meta my-3 list-inline">
                         <li class="list-inline-item">
                             {% assign author = site.data.authors[page.author] %}
-                            <a href="author-single.html" class="card-meta-author">
+                            <a href="/autores/{{ page.author }}" class="card-meta-author">
                                 <img src="{{ author.avatar }}" alt="{{ author.name }}">
                                 <span>{{ author.name }}</span>
                             </a>

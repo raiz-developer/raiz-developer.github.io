@@ -10,7 +10,7 @@
             <ul class="card-meta list-inline">
                 <li class="list-inline-item">
                     {% assign author = site.data.authors[post.author] %}
-                    <a href="author-single.html" class="card-meta-author">
+                    <a href="/autores/{{ post.author }}" class="card-meta-author">
                         <img src="{{ author.avatar }}" alt="{{ author.name }}">
                         <span>{{ author.name }}</span>
                     </a>
