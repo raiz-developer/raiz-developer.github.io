@@ -21,11 +21,21 @@ sass:
 markdown: kramdown
 highlighter: rouge
 permalink: "/:title/"
-paginate_path: "/page/:num/"
+paginate_path: "/pagina/:num/"
 paginate: 10
 
 kramdown:
   input: GFM
+
+# archives
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: 'archive'
+  permalinks:
+    category: '/categorias/:name/'
+    tag: '/tags/:name/'
 
 # plugins
 plugins:

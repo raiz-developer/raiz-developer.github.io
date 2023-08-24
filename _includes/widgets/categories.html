@@ -9,7 +9,7 @@
     <h4 class="widget-title"><span>Categorias</span></h4>
     <ul class="list-unstyled widget-list">
         {%- for category in categories -%}
-        <li><a href="tags.html" class="d-flex">{{- category -}} <small class="ml-auto">({{ site.categories[category].size }})</small></a></li>
+        <li><a href="/categorias/{{ category | slugify }}" class="d-flex">{{ category }} <small class="ml-auto">({{ site.categories[category].size }})</small></a></li>
         {%- endfor -%}
     </ul>
 </div>

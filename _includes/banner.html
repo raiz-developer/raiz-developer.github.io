@@ -2,6 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-9 mx-auto">
+                {% if include.type == "home" %}
                 <h1 class="mb-5">O que você <br> Gosta de ler hoje?</h1>
 
                 {%- capture site_tags -%}
@@ -14,10 +15,11 @@
                 <ul class="list-inline widget-list-inline">
                     {%- for tag in tags -%}
                     <li class="list-inline-item">
-                        <a href="#">{{- tag -}}</a>
+                        <a href="/tags/{{ tag | slugify }}">{{ tag }}</a>
                     </li>
                     {%- endfor -%}
                 </ul>
+                {% endif %}
             </div>
         </div>
     </div>
