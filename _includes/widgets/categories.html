@@ -1,0 +1,15 @@
+<div class="widget widget-categories">
+    {%- capture site_categories -%}
+    {%- for category in site.categories -%}
+    {{- category | first -}}{%- unless forloop.last -%},{%- endunless -%}
+    {%- endfor -%}
+    {%- endcapture -%}
+    {%- assign categories = site_categories | split:',' | sort -%}
+
+    <h4 class="widget-title"><span>Categorias</span></h4>
+    <ul class="list-unstyled widget-list">
+        {%- for category in categories -%}
+        <li><a href="tags.html" class="d-flex">{{- category -}} <small class="ml-auto">({{ site.categories[category].size }})</small></a></li>
+        {%- endfor -%}
+    </ul>
+</div>

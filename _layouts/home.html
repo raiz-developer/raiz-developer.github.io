@@ -3,3 +3,20 @@ layout: default
 ---
 
 {% include banner.html %}
+
+<section class="section-sm">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 mb-5 mb-lg-0">
+                {% assign posts = paginator.posts | default: site.posts %}
+                {% for post in posts %}
+                {% include post-item.html %}
+                {% endfor %}
+            </div>
+            <aside class="col-lg-4 @@sidebar">
+                {% include widgets/categories.html %}
+                {% include widgets/tags.html %}
+            </aside>
+        </div>
+    </div>
+</section>

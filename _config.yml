@@ -17,6 +17,16 @@ lang: pt-BR
 sass:
   style: compressed
 
+# output options (more information on Jekyll's site)
+markdown: kramdown
+highlighter: rouge
+permalink: "/:title/"
+paginate_path: "/page/:num/"
+paginate: 10
+
+kramdown:
+  input: GFM
+
 # plugins
 plugins:
   - jekyll-paginate

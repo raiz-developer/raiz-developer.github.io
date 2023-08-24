@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<div class="py-4"></div>
+<section class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class=" col-lg-9   mb-5 mb-lg-0">
+                <article>
+                    <div class="post-slider mb-4 slick-initialized slick-slider">
+                        <div class="slick-list draggable">
+                            <div class="slick-track" style="opacity: 1; width: 825px; transform: translate3d(0px, 0px, 0px);">
+                                <img src="{{ page.image }}" class="card-img slick-slide slick-current slick-active" alt="post-thumb" data-slick-index="0" aria-hidden="false" tabindex="0" style="width: 825px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <h1 class="h2">{{ page.title }}</h1>
+                    <ul class="card-meta my-3 list-inline">
+                        <li class="list-inline-item">
+                            {% assign author = site.data.authors[page.author] %}
+                            <a href="author-single.html" class="card-meta-author">
+                                <img src="{{ author.avatar }}" alt="{{ author.name }}">
+                                <span>{{ author.name }}</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <i class="ti-timer"></i>{% include reading-time.html content=page.content %}
+                        </li>
+                        <li class="list-inline-item">
+                            <i class="ti-calendar"></i>{% include date-pt-br.html date = page.date %}
+                        </li>
+                        <li class="list-inline-item">
+                            {% assign tags = page.tags | sort_natural %}
+                            <ul class="card-meta-tag list-inline">
+                                {% for tag in tags %}
+                                <li class="list-inline-item"><a href="tags.html">{{ tag }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="content">
+                        {{ content }}
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>

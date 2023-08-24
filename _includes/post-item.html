@@ -1,35 +1,41 @@
-<div class="col-sm-6">
-    <div class="card">
-        <div class="position-relative">
-            <img class="card-img" src="{{ post.image.thumb | relative_url }}" alt="Card image">
-            <div class="card-img-overlay d-flex align-items-start flex-column p-3">
-                <div class="w-100 mt-auto">
-                    {% assign tags = post.tags | sort_natural %}
-                    {% for tag in tags %}
-                    <a href="#" class="badge text-bg-success mb-2"><i class="fas fa-circle me-2 small fw-bold"></i>{{ tag }}</a>
-                    {% endfor %}
+<article class="card mb-4">
+    <div class="row card-body">
+        <div class="col-md-4 mb-4 mb-md-0">
+            <div class="post-slider slider-sm slick-initialized slick-slider">
+                <div class="slick-list draggable">
+                    <div class="slick-track" style="opacity: 1; width: 207px; transform: translate3d(0px, 0px, 0px);">
+                        <img src="{{ post.image | relative_url }}" class="card-img slick-slide slick-current slick-active" alt="{{ post.title | strip_html }}" style="height: 200px; object-fit: cover; width: 207px;" data-slick-index="0" aria-hidden="false" tabindex="0">
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="card-body px-0 pt-3">
-            <h4 class="card-title"><a href="post-single-3.html" class="btn-link text-reset fw-bold">{{ post.title | strip_html }}</a></h4>
-            <p class="card-text">{{ post.excerpt | strip_html }}</p>
-            <ul class="nav nav-divider align-items-center d-none d-sm-inline-block">
-                <li class="nav-item">
-                    <div class="nav-link">
-                        <div class="d-flex align-items-center position-relative">
-                            {% assign author = site.data.authors[post.author] %}
-                            <div class="avatar avatar-xs">
-                                <img class="avatar-img rounded-circle" src="{{ author.avatar }}" alt="avatar">
-                            </div>
-                            <span class="ms-3">
-                                <a href="{{ '/autores/' | append: author.id | relative_url }}" class="stretched-link text-reset btn-link">{{ author.name }}</a>
-                            </span>
-                        </div>
-                    </div>
+        <div class="col-md-8">
+            <h3 class="h4 mb-3"><a class="post-title" href="{{ post.url | absolute_url }}">{{ post.title | strip_html }}</a></h3>
+            <ul class="card-meta list-inline">
+                <li class="list-inline-item">
+                    {% assign author = site.data.authors[post.author] %}
+                    <a href="author-single.html" class="card-meta-author">
+                        <img src="{{ author.avatar }}" alt="{{ author.name }}">
+                        <span>{{ author.name }}</span>
+                    </a>
                 </li>
-                <li class="nav-item">{% include date-pt-BR.html date = post.date %}</li>
+                <li class="list-inline-item">
+                    <i class="ti-timer"></i>{% include reading-time.html content=post.content %}
+                </li>
+                <li class="list-inline-item">
+                    <i class="ti-calendar"></i>{% include date-pt-br.html date = post.date %}
+                </li>
+                <li class="list-inline-item">
+                    {% assign tags = post.tags | sort_natural %}
+                    <ul class="card-meta-tag list-inline">
+                        {% for tag in tags %}
+                        <li class="list-inline-item"><a href="tags.html">{{ tag }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </li>
             </ul>
+            <p>{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+            <a href="post-details.html" class="btn btn-outline-primary">Leia mais</a>
         </div>
     </div>
-</div>
+</article>
