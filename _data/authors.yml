@@ -6,10 +6,13 @@ danielwisky:
   social:
     - name: "GitHub"
       url: "https://github.com/danielwisky"
-      icon: "fab fa-github"
+      icon: "ti-github"
     - name: "LinkedIn"
       url: "https://www.linkedin.com/in/danielwisky"
-      icon: "fab fa-linkedin"
+      icon: "ti-linkedin"
+    - name: "YouTube"
+      url: "https://www.youtube.com/c/DanielWisky"
+      icon: "ti-youtube"
 tiagosilva:
   name: "Tiago Silva"
   email: ""
@@ -18,7 +21,7 @@ tiagosilva:
   social:
     - name: "GitHub"
       url: "https://github.com/progtiago"
-      icon: "fab fa-github"
+      icon: "ti-github"
     - name: "LinkedIn"
       url: "https://www.linkedin.com/in/tiago-silva-644b0533/"
-      icon: "fab fa-linkedin"
+      icon: "ti-linkedin"

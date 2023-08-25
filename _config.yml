@@ -17,6 +17,9 @@ lang: pt-BR
 sass:
   style: compressed
 
+# seo
+seo_paginator_message: "Página %<current>s de %<total>s - "
+
 # output options (more information on Jekyll's site)
 markdown: kramdown
 highlighter: rouge
@@ -26,6 +29,11 @@ paginate: 10
 
 kramdown:
   input: GFM
+
+collections:
+  authors:
+    output: true
+    permalink: /autores/:name/
 
 # archives
 jekyll-archives:
