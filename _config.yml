@@ -10,8 +10,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   Através do nosso blog, esperamos criar uma comunidade de programadores entusiasmados que possam compartilhar conhecimentos, trocar experiências e colaborar para o crescimento mútuo. Estamos aqui para tornar a sua jornada de desenvolvimento de software mais enriquecedora, divertida e repleta de descobertas.
   
   Junte-se a nós no Raiz Academy e embarque em uma jornada emocionante pelo mundo da tecnologia e do desenvolvimento de software!
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ""
+url: https://raiz-developer.github.io
 lang: pt-BR
 
 sass:
@@ -30,6 +30,13 @@ paginate: 10
 kramdown:
   input: GFM
 
+# fill in your Google Analytics ID to track your website using Google Analytics
+google_analytics: "G-HLT45PWL2D"
+
+# to use Disqus comments, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
+disqus: "devraiz"
+
+# collections
 collections:
   authors:
     output: true
