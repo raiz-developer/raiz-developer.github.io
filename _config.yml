@@ -1,15 +1,15 @@
-title: Raiz Academy
+title: raiz.dev
 email: raizdeveloper@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  A Raiz Academy é um blog dedicado aos entusiastas de tecnologia, programação e desenvolvimento de software. Nosso objetivo é fornecer informações atualizadas e relevantes sobre os mais diversos tópicos relacionados ao mundo da tecnologia.
+  A raiz.dev é um blog dedicado aos entusiastas de tecnologia, programação e desenvolvimento de software. Nosso objetivo é fornecer informações atualizadas e relevantes sobre os mais diversos tópicos relacionados ao mundo da tecnologia.
   
   Nossos artigos cobrem uma ampla variedade de temas, desde as últimas tendências em linguagens de programação e frameworks até dicas e truques para aprimorar suas habilidades de desenvolvimento. Apresentamos tutoriais passo a passo, discussões aprofundadas sobre arquitetura de software, boas práticas de codificação e insights valiosos para ajudar você a se manter atualizado no campo em constante evolução da tecnologia.
   
-  Além disso, o Raiz Academy está comprometido em fornecer conteúdos acessíveis tanto para iniciantes quanto para profissionais experientes. Queremos inspirar você a explorar novas áreas, aprender novas tecnologias e aprimorar suas habilidades técnicas.
+  Além disso, o raiz.dev está comprometido em fornecer conteúdos acessíveis tanto para iniciantes quanto para profissionais experientes. Queremos inspirar você a explorar novas áreas, aprender novas tecnologias e aprimorar suas habilidades técnicas.
   
   Através do nosso blog, esperamos criar uma comunidade de programadores entusiasmados que possam compartilhar conhecimentos, trocar experiências e colaborar para o crescimento mútuo. Estamos aqui para tornar a sua jornada de desenvolvimento de software mais enriquecedora, divertida e repleta de descobertas.
   
-  Junte-se a nós no Raiz Academy e embarque em uma jornada emocionante pelo mundo da tecnologia e do desenvolvimento de software!
+  Junte-se a nós no raiz.dev e embarque em uma jornada emocionante pelo mundo da tecnologia e do desenvolvimento de software!
 baseurl: ""
 url: https://raiz-developer.github.io
 lang: pt-BR
