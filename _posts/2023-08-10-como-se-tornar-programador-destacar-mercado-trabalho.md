@@ -3,8 +3,8 @@ layout: post
 title: "Como se Tornar um Programador Excepcional e se Destacar no Mercado de Trabalho"
 author: danielwisky
 image: /assets/img/posts/destaque-mercado-trabalho.jpeg
-categories: [ Desenvolvimento de Carreira ]
-tags: [ Carreira ]
+categories: [Desenvolvimento de Carreira]
+tags: [Carreira, Mercado de Trabalho]
 ---
 
 O mercado de trabalho para programadores está cada vez mais competitivo e exigente. Para se destacar entre tantos profissionais na área, é necessário ir além do conhecimento técnico básico. Neste artigo, vamos discutir estratégias e dicas para se tornar um programador excepcional e conquistar sucesso no mercado de trabalho.

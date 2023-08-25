@@ -459,6 +459,14 @@
         border-color: $primary-color;
       }
     }
+
+    &.disabled .page-link {
+      color: $pagination-disabled-color;
+      pointer-events: none;
+      cursor: auto;
+      background-color: $pagination-disabled-bg;
+      border-color: $pagination-disabled-border-color;
+    }
   }
 }
 

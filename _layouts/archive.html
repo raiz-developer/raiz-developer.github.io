@@ -5,17 +5,15 @@ layout: default
 <section class="section">
     <div class="py-4"></div>
     <div class="container">
-        <div class="row">
-            <div class="col-lg-8  mb-5 mb-lg-0">
-                <h1 class="h2 mb-4">Mostrando itens de <mark>{{ page.title }}</mark></h1>
+        <div class="row justify-content-center">
+            <div class="col-lg-10 mb-4">
+                <h1 class="h2">Mostrando itens de <mark>{{ page.title }}</mark></h1>
+            </div>
+            <div class="col-lg-10">
                 {% for post in page.posts %}
                 {% include post-item.html %}
                 {% endfor %}
             </div>
-            <aside class="col-lg-4 sidebar-inner">
-                {% include widgets/categories.html %}
-                {% include widgets/tags.html %}
-            </aside>
         </div>
     </div>
 </section>
