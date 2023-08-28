@@ -1,6 +1,6 @@
 <div class="widget widget-author">
     <h4 class="widget-title">Autores</h4>
-    {% assign authors = (site.data.authors | sort) %}
+    {% assign authors = site.data.authors | sort %}
     {% for author in authors %}
     <div class="media align-items-center">
         <div class="mr-3">
