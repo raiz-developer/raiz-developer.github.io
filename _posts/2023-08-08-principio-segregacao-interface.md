@@ -3,6 +3,7 @@ layout: post
 title: "SOLID: Princípio da Segregação da Interface"
 subtitle: "Princípio da Segregação da Interface e exemplos de implementação em Java"
 author: danielwisky
+image: /assets/img/posts/principio-segregacao-interface.png
 categories: [Desenvolvimento de Software]
 tags: [SOLID]
 ---
