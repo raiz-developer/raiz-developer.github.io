@@ -3,7 +3,9 @@ layout: post
 title: "SOLID: Princípio Aberto-Fechado"
 subtitle: "Princípio Princípio Aberto-Fechado e exemplos de implementação em Java"
 author: danielwisky
-image: /assets/img/posts/principio-aberto-fechado.png
+image:
+   cover: /assets/img/posts/principio-aberto-fechado.png
+   thumb: /assets/img/posts/principio-aberto-fechado-thumb.png
 categories: [Desenvolvimento de Software]
 tags: [SOLID]
 ---
