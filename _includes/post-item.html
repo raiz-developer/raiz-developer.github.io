@@ -1,37 +1,39 @@
 <article class="card mb-4">
-    <div class="row card-body">
-        {% if post.image.thumb %}
-        <div class="col-md-4 mb-4 mb-md-0">
-            <img src="{{ post.image.thumb | relative_url }}" class="card-img" alt="{{ post.title | strip_html }}" style="height: 200px;">
+
+    {% if post.image %}
+    <div class="post-slider">
+        <div class="slick-track" style="opacity: 1; width: 730px; transform: translate3d(0px, 0px, 0px);">
+            <img src="{{ post.image | relative_url }}" class="card-img-top slick-slide slick-current slick-active" alt="{{ post.title | strip_html }}" style="width: 730px;">
         </div>
-        {% endif %}
-        <div class="{% if post.image %}col-md-8{% else %}col-12{% endif %}">
-            <h3 class="h4 mb-3"><a class="post-title" href="{{ post.url | absolute_url }}">{{ post.title | strip_html }}</a></h3>
-            <ul class="card-meta list-inline">
-                <li class="list-inline-item">
-                    {% assign author = site.data.authors[post.author] %}
-                    <a href="/autores/{{ post.author }}" class="card-meta-author">
-                        <img src="{{ author.avatar }}" alt="{{ author.name }}">
-                        <span>{{ author.name }}</span>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <i class="ti-timer"></i>{% include reading-time.html content=post.content %}
-                </li>
-                <li class="list-inline-item">
-                    <i class="ti-calendar"></i>{% include date-pt-BR.html date = post.date %}
-                </li>
-                <li class="list-inline-item">
-                    {% assign tags = post.tags | sort_natural %}
-                    <ul class="card-meta-tag list-inline">
-                        {% for tag in tags %}
-                        <li class="list-inline-item"><a href="/tags/{{ tag | slugify }}">{{ tag }}</a></li>
-                        {% endfor %}
-                    </ul>
-                </li>
-            </ul>
-            <p>{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
-            <a href="{{ post.url | absolute_url }}" class="btn btn-outline-primary">Leia mais</a>
-        </div>
+    </div>
+    {% endif %}
+
+    <div class="card-body">
+        <h3 class="mb-3"><a class="post-title" href="{{ post.url | absolute_url }}">{{ post.title | strip_html }}</a></h3>
+        <ul class="card-meta list-inline">
+            <li class="list-inline-item">
+                {% assign author = site.data.authors[post.author] %}
+                <a href="/autores/{{ post.author }}" class="card-meta-author">
+                    <img src="{{ author.avatar }}" alt="{{ author.name }}">
+                    <span>{{ author.name }}</span>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <i class="ti-timer"></i>{% include reading-time.html content=post.content %}
+            </li>
+            <li class="list-inline-item">
+                <i class="ti-calendar"></i>{% include date-pt-BR.html date = post.date %}
+            </li>
+            <li class="list-inline-item">
+                {% assign tags = post.tags | sort_natural %}
+                <ul class="card-meta-tag list-inline">
+                    {% for tag in tags %}
+                    <li class="list-inline-item"><a href="/tags/{{ tag | slugify }}">{{ tag }}</a></li>
+                    {% endfor %}
+                </ul>
+            </li>
+        </ul>
+        <p>{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+        <a href="{{ post.url | absolute_url }}" class="btn btn-outline-primary">Leia mais</a>
     </div>
 </article>
